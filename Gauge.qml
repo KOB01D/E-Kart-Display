@@ -116,7 +116,7 @@ CircularGauge {
                 anchors.centerIn: parent
                 Label{
                     text: gauge.value.toFixed(0)
-                    font.pixelSize: 85
+                    font.pixelSize: 43
                     font.family: "Inter"
                     color: "#01E6DE"
                     font.bold: Font.DemiBold
@@ -124,8 +124,8 @@ CircularGauge {
                 }
 
                 Label{
-                    text: "MPH"
-                    font.pixelSize: 46
+                    text: "KMH"
+                    font.pixelSize: 23
                     font.family: "Inter"
                     color: "#01E6DE"
                     font.bold: Font.Normal

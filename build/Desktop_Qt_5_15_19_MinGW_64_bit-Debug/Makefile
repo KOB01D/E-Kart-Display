@@ -248,6 +248,7 @@ Makefile: ../../Car_1.pro D:/QT-Framework/5.15.19/mingw81_64/mkspecs/win32-g++/q
 		D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/qt_config.prf \
 		D:/QT-Framework/5.15.19/mingw81_64/mkspecs/win32-g++/qmake.conf \
 		D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/exclusive_builds.prf \
 		D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/toolchain.prf \
 		D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/default_pre.prf \
@@ -278,7 +279,6 @@ Makefile: ../../Car_1.pro D:/QT-Framework/5.15.19/mingw81_64/mkspecs/win32-g++/q
 		D:/QT-Framework/5.15.19/mingw81_64/lib/Qt5Network.prl \
 		D:/QT-Framework/5.15.19/mingw81_64/lib/Qt5Core.prl \
 		D:/QT-Framework/5.15.19/mingw81_64/lib/qtmain.prl \
-		.qmake.stash \
 		D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/build_pass.prf \
 		../../qml.qrc
 	$(QMAKE) -o Makefile ..\..\Car_1.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -460,6 +460,7 @@ D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/qt_functions.prf:
 D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/qt_config.prf:
 D:/QT-Framework/5.15.19/mingw81_64/mkspecs/win32-g++/qmake.conf:
 D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/exclusive_builds.prf:
 D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/toolchain.prf:
 D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/default_pre.prf:
@@ -490,7 +491,6 @@ D:/QT-Framework/5.15.19/mingw81_64/lib/Qt5Qml.prl:
 D:/QT-Framework/5.15.19/mingw81_64/lib/Qt5Network.prl:
 D:/QT-Framework/5.15.19/mingw81_64/lib/Qt5Core.prl:
 D:/QT-Framework/5.15.19/mingw81_64/lib/qtmain.prl:
-.qmake.stash:
 D:/QT-Framework/5.15.19/mingw81_64/mkspecs/features/build_pass.prf:
 ../../qml.qrc:
 qmake: FORCE

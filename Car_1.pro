@@ -23,3 +23,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
 	radialbar.h
+
+DISTFILES +=

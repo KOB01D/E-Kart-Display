@@ -34,5 +34,6 @@
         <file>assets/SecondRightIcon_red.svg</file>
         <file>assets/thirdRightIcon_red.svg</file>
         <file>assets/FourthRightIcon_red.svg</file>
+        <file>Battery.qml</file>
     </qresource>
 </RCC>
