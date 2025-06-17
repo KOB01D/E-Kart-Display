@@ -10,7 +10,7 @@ ApplicationWindow {
     visible: true
     title: qsTr("Car DashBoard")
     color: "#1E1E1E"
-    visibility: "Windowed"
+    visibility: "FullScreen"
     property int nextSpeed: 60
     property int batteryLevel: 50
 
