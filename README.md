@@ -37,7 +37,7 @@
 <h3 align="center">E-Kart-Display</h3>
 
   <p align="center">
-    Using raspberry Pi as a display for E-Cart
+    Using raspberry Pi as a display for E-Kart
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+The original project is from https://github.com/cppqtdev/Qt-HMI-Display-UI and built using Qt Qml. I have made a few adjustments and some new features to make it suitable for my application. I will also show how I use a Raspberry Pi 4 to run the program. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,36 +109,35 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+For this project, I use Raspberry Pi 4 with Debian 10 installed and an 800x480 touchscreen display from Elecrow.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Install Qt5 for Raspberry Pi.
+* Qt5
   ```sh
-  npm install npm@latest -g
+  sudo apt install qt5-default qtbase5-dev qtdeclarative5-dev libqt5svg5-dev qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtgraphicaleffects qml-module-qtquick-xmllistmodel -y
+
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   https://github.com/KOB01D/E-Kart-Display.git
    ```
-3. Install NPM packages
+3. Go to the project directory
    ```sh
-   npm install
+   cd /home/YOUR_DIRECTORY
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
+4. compile the project
    ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
+   qmake
+   make -j
+   ```
+5. Run the project
+   ```sh
+   ./Car_1
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
