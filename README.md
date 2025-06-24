@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-The original project is from https://github.com/cppqtdev/Qt-HMI-Display-UI and built using Qt Qml. I have made a few adjustments and some new features to make it suitable for my application. I will also show how I use a Raspberry Pi 4 to run the program. 
+The original project is from https://github.com/cppqtdev/Qt-HMI-Display-UI and built using Qt Qml. I have made a few adjustments and some new features to make it suitable for my application. I will also show how I use a Raspberry Pi 4 to run the program and make it run on boot. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,20 +122,20 @@ Install Qt5 for Raspberry Pi.
 
 ### Installation
 
-2. Clone the repo
+1. Clone the repo
    ```sh
    https://github.com/KOB01D/E-Kart-Display.git
    ```
-3. Go to the project directory
+2. Go to the project directory
    ```sh
    cd /home/YOUR_DIRECTORY
    ```
-4. compile the project
+3. compile the project
    ```sh
    qmake
    make -j
    ```
-5. Run the project
+4. Run the project
    ```sh
    ./Car_1
    ```
