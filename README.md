@@ -144,12 +144,42 @@ Install Qt5 for Raspberry Pi.
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- startup on boot -->
+## Startup on boot
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+In this section, I will show how I program the Raspberry Pi to start on boot using Kiosk mode with X11.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Install Unclutter to hide the mouse cursor.
+   ```sh
+   sudo apt-get install unclutter
+  ```
+2. Write a shell script to run the program in Kiosk mode.
+  ```sh
+  nano run_kiosk.sh
+  ```
+3. Write this code in the `run_kiosk.sh`.
+  ```json
+  sleep 4
+  ./YOUR_DIRECTORY/Car_1 --kiosk --start-maximized --noerrdialogs --disable-infobars
+  ```
+4. Make the file executable. 
+  ```sh
+  chmod +x run_kiosk.sh
+  ```
+5. Open the autostart file to make a few adjustments so that Pi will run our `run_kiosk.sh` on boot.
+   ```sh
+   sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+   ```
+6. Write this code in the autostart file.
+  ```json
+  @xset s off
+  @xset s noblank
+  @xset -dpms
+  @unclutter-idle 3 -root
+  @/home/pi/run_kiosk.sh
+  ```
+7. Now the pi is ready and will run the program on boot.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
