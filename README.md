@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/KOB01D/E-Kart-Display.git">
-    <img src="images/EKart-Display.png" alt="Logo" width="80" height="80">
+    <img src="images/EKart-Display.png" width="800" height="480">
   </a>
 
 <h3 align="center">E-Kart-Display</h3>
