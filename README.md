@@ -28,6 +28,9 @@
 
 <h3 align="center">E-Kart-Display</h3>
 
+ 
+</div>
+
 
 
 <!-- TABLE OF CONTENTS -->
@@ -47,8 +50,12 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#Startup on boot">Usage</a></li>
-    <li><a href="#Adding power button">Roadmap</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -67,7 +74,14 @@ The original project is from https://github.com/cppqtdev/Qt-HMI-Display-UI and b
 
 ### Built With
 
-* [![Qt][Qt.js]][https://www.qt.io/]
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Svelte][Svelte.dev]][Svelte-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +165,7 @@ In this section, I will show how I program the Raspberry Pi to start on boot usi
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ADD POWER BUTTON -->
-## Adding power button
+## Startup on boot
 
 In this section, I will show how to add a power button to turn on and off the Raspberry Pi.
 
