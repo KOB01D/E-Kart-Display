@@ -47,8 +47,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#Startup on boot">Startup on boot</a></li>
-    <li><a href="#Adding power button">Adding power button</a></li>
+    <li><a href="#startup-on-boot">Startup on boot</a></li>
+    <li><a href="#adding-power-button">Adding power button</a></li>
   </ol>
 </details>
 
@@ -151,7 +151,7 @@ In this section, I will show how to add a power button to turn on and off the Ra
 1. In order to work, we need to use a push button.
 2. Connect the pin to GPIO 3 and ground at the Raspberry Pi
 
-   <img src="images/GPIO-Pinout-Diagram-2.png" width="300" height="200">
+   <img src="images/GPIO-Pinout-Diagram-2.png" width="500" height="300">
 
 3. Open config.txt using nano.
    ```sh
