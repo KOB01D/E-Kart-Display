@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/KOB01D/E-Kart-Display.git">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/EKart-Display.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">E-Kart-Display</h3>
@@ -144,21 +144,21 @@ Install Qt5 for Raspberry Pi.
 
 
 
-<!-- startup on boot -->
+<!-- STARTUP ON BOOT -->
 ## Startup on boot
 
 In this section, I will show how I program the Raspberry Pi to start on boot using Kiosk mode with X11.
 
 1. Install Unclutter to hide the mouse cursor.
-   ```sh
-   sudo apt-get install unclutter
+  ```sh
+  sudo apt-get install unclutter
   ```
 2. Write a shell script to run the program in Kiosk mode.
   ```sh
   nano run_kiosk.sh
   ```
 3. Write this code in the `run_kiosk.sh`.
-  ```json
+  ```sh
   sleep 4
   ./YOUR_DIRECTORY/Car_1 --kiosk --start-maximized --noerrdialogs --disable-infobars
   ```
@@ -171,7 +171,7 @@ In this section, I will show how I program the Raspberry Pi to start on boot usi
    sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
    ```
 6. Write this code in the autostart file.
-  ```json
+  ```sh
   @xset s off
   @xset s noblank
   @xset -dpms
@@ -183,6 +183,29 @@ In this section, I will show how I program the Raspberry Pi to start on boot usi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- ADD POWER BUTTON -->
+## Startup on boot
+
+In this section, I will show how to add a power button to turn on and off the Raspberry Pi.
+
+1. In order to work, we need to use a push button like this.
+  ```sh
+  sudo apt-get install unclutter
+  ```
+2. Open config.txt using nano.
+  ```sh
+  sudo nano /boot/config.txt
+  ```
+3. Add this code at the end of the line.
+  ```sh
+  #Power button
+  dtoverlay=gpio-shutdown
+  ```
+4. Now the Raspberry Pi can be turned on and off using an external push button. 
+ 
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ROADMAP -->
