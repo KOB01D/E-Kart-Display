@@ -47,8 +47,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#Startup on boot">Usage</a></li>
-    <li><a href="#Adding power button">Roadmap</a></li>
+    <li><a href="#Startup on boot">Startup on boot</a></li>
+    <li><a href="#Adding power button">Adding power button</a></li>
   </ol>
 </details>
 
