@@ -150,34 +150,34 @@ Install Qt5 for Raspberry Pi.
 In this section, I will show how I program the Raspberry Pi to start on boot using Kiosk mode with X11.
 
 1. Install Unclutter to hide the mouse cursor.
-  ```sh
-  sudo apt-get install unclutter
-  ```
-2. Write a shell script to run the program in Kiosk mode.
-  ```sh
-  nano run_kiosk.sh
-  ```
-3. Write this code in the `run_kiosk.sh`.
-  ```sh
-  sleep 4
-  ./YOUR_DIRECTORY/Car_1 --kiosk --start-maximized --noerrdialogs --disable-infobars
-  ```
-4. Make the file executable. 
-  ```sh
-  chmod +x run_kiosk.sh
-  ```
-5. Open the autostart file to make a few adjustments so that Pi will run our `run_kiosk.sh` on boot.
    ```sh
-   sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+   sudo apt-get install unclutter
    ```
+2. Write a shell script to run the program in Kiosk mode.
+   ```sh
+   nano run_kiosk.sh
+   ```
+3. Write this code in the `run_kiosk.sh`.
+   ```sh
+   sleep 4
+   ./YOUR_DIRECTORY/Car_1 --kiosk --start-maximized --noerrdialogs --disable-infobars
+   ```
+4. Make the file executable. 
+   ```sh
+   chmod +x run_kiosk.sh
+   ```
+5. Open the autostart file to make a few adjustments so that Pi will run our `run_kiosk.sh` on boot.
+    ```sh
+    sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+    ```
 6. Write this code in the autostart file.
-  ```sh
-  @xset s off
-  @xset s noblank
-  @xset -dpms
-  @unclutter-idle 3 -root
-  @/home/pi/run_kiosk.sh
-  ```
+   ```sh
+   @xset s off
+   @xset s noblank
+   @xset -dpms
+   @unclutter-idle 3 -root
+   @/home/pi/run_kiosk.sh
+   ```
 7. Now the pi is ready and will run the program on boot.
 
 
@@ -189,19 +189,21 @@ In this section, I will show how I program the Raspberry Pi to start on boot usi
 In this section, I will show how to add a power button to turn on and off the Raspberry Pi.
 
 1. In order to work, we need to use a push button like this.
-  ```sh
-  sudo apt-get install unclutter
-  ```
-2. Open config.txt using nano.
-  ```sh
-  sudo nano /boot/config.txt
-  ```
-3. Add this code at the end of the line.
-  ```sh
-  #Power button
-  dtoverlay=gpio-shutdown
-  ```
-4. Now the Raspberry Pi can be turned on and off using an external push button. 
+   <img src="images/push_button.jpg" width="300" height="200">
+
+2. Connect the pin to GPIO 3 and ground at the Raspberry Pi
+   <img src="images/GPIO-Pinout-Diagram-2.png" width="800" height="480">
+
+3. Open config.txt using nano.
+   ```sh
+   sudo nano /boot/config.txt
+   ```
+4. Add this code at the end of the line.
+   ```sh
+   #Power button
+   dtoverlay=gpio-shutdown
+   ```
+5. Now the Raspberry Pi can be turned on and off using an external push button. 
  
 
 
